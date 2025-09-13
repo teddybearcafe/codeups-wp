@@ -1,0 +1,22 @@
+@use "global" as *;
+  
+  .blog-cards {
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+    justify-items: center;
+    gap: rem(36);
+  
+    @include mq("md") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .blog-cards__item {
+    max-width: rem(600);
+    height: 100%;
+
+    @include mq("md"){
+      max-width: calc( ($inner - 5rem) / 3);    
+    }
+
+  }

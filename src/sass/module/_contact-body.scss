@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.contact-body {
+    margin-top: rem(52);
+
+    @include mq("md") {
+        margin-top: rem(132);
+    }
+}
+
+.contact-body .contact-body__inner {
+    max-width: rem(600);
+    margin: 0 auto;
+
+    @include mq("md") {
+        max-width: rem(750);
+    }
+}

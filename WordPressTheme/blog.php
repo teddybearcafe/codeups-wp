@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex,nofollow">
+
+  <!-- meta情報 -->
+  <title>CodeUps</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="CodeUps" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="CodeUps" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="summary" />
+  <!-- ファビコン -->
+  <link rel="icon" href="<?php echo get_theme_file_uri(); ?>/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri(); ?>/assets/images/apple-touch-icon.png" sizes="180x180" />
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo get_theme_file_uri(); ?>/assets/css/style.css?ver=20250329.1900" />
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script defer src="<?php echo get_theme_file_uri(); ?>/assets/js/jquery.inview.min.js"></script>
+  <script defer src="<?php echo get_theme_file_uri(); ?>/assets/js/script.js"></script>
+</head>
+
+<body>
+  <header id="header" class="header js-header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="./index.html" class="header__logo-link">
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps.svg" alt="CodeUps｜沖縄県那覇市のダイビングショップ">
+          <span class="visually-hidden">CodeUps - 沖縄県那覇市のダイビングショップ</span>
+        </a>
+      </div>
+      <nav class="header__nav md-show">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="./campaign.html" class="header__link">
+              <span>Campaign</span>
+              <span>キャンペーン</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./about.html" class="header__link">
+              <span>About us</span>
+              <span>私たちについて</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./information.html" class="header__link">
+              <span>Information</span>
+              <span>ダイビング情報</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./blog.html" class="header__link">
+              <span>Blog</span>
+              <span>ブログ</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./voice.html" class="header__link">
+              <span>Voice</span>
+              <span>お客様の声</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./price.html" class="header__link">
+              <span>Price</span>
+              <span>料金一覧</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./faq.html" class="header__link">
+              <span>FAQ</span>
+              <span>よくある質問</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./contact.html" class="header__link">
+              <span>Contact</span>
+              <span>お問合せ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger js-hamburger md-none">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ドロアーメニュー -->
+    <div class="drawer js-drawer">
+      <div class="drawer__inner inner">
+
+        <!-- 共通ナビゲーション部分 -->
+        <nav class="drawer__nav global-nav">
+          <div class="global-nav__content">
+            <div class="global-nav__grid">
+              <!-- カラム1 -->
+              <div class="global-nav__column global-nav__item1">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#campaign" class="global-nav__title">キャンペーン</a>
+                  </div>
+                  <ul class="global-nav__list">
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ライセンス取得</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">貸切体験ダイビング</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ナイトダイビング</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- カラム1 2つ目のブロック -->
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#about" class="global-nav__title">私たちについて</a>
+                  </div>
+                </div><!-- カラム１ 2つ目のブロック -->
+              </div><!-- カラム1 -->
+
+              <!-- カラム2 -->
+              <div class="global-nav__column global-nav__item2">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <span class="global-nav__title">ダイビング情報</span>
+                  </div>
+                  <ul class="global-nav__list">
+                    <li class="global-nav__list-item">
+                      <a href="./information.html?active-tab=tab-license" class="global-nav__link">ライセンス講習</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="./information.html?active-tab=tab-diving" class="global-nav__link">体験ダイビング</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="./information.html?active-tab=tab-fundiving" class="global-nav__link">ファンダイビング</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- カラム2 2つ目のブロック -->
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./blog.html" class="global-nav__title">ブログ</a>
+                  </div>
+                </div><!-- カラム2 2つ目のブロック -->
+              </div><!-- カラム2 -->
+
+              <!-- カラム3 -->
+              <div class="global-nav__column global-nav__item3">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#voice" class="global-nav__title">お客様の声</a>
+                  </div>
+                </div>
+
+                <!-- カラム3 2つ目のブロック -->
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#price" class="global-nav__title">料金一覧</a>
+                  </div>
+                  <ul class="global-nav__list">
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ライセンス講習</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">体験ダイビング</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ファンダイビング</a>
+                    </li>
+                  </ul>
+                </div><!-- カラム3 2つ目のブロック -->
+
+              </div><!-- カラム3 -->
+
+              <!-- カラム4 -->
+              <div class="global-nav__column global-nav__item4">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./faq.html" class="global-nav__title">よくある質問</a>
+                  </div>
+                </div>
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
+                  </div>
+                </div>
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./terms.html" class="global-nav__title">利用規約</a>
+                  </div>
+                </div>
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
+                  </div>
+                </div>
+              </div><!-- カラム4 -->
+            </div>
+          </div>
+        </nav><!-- 共通ナビゲーション部分 -->
+      </div>
+    </div><!-- ドロアーメニュー -->
+
+  </header>
+
+  <main>
+    <div class="mv-individual">
+      <picture class="mv-individual__img">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/blog-mv.jpg" media="(min-width: 767px)">
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog-mv-sp.jpg" alt="青い海のなか蝶々魚が泳ぐ様子">
+      </picture>
+      <div class="mv-individual__body">
+        <h1 class="mv-individual__title">blog</h1>
+      </div>
+    </div>
+
+    <!-- breadcrumb -->
+    <div class="blog-breadcrumb">
+      <div class="blog-breadcrumb__inner inner">
+        <nav class="breadcrumb">
+          <ul class="breadcrumb__lists">
+            <li class="breadcrumb__list-item"><a href="index.html">TOP</a></li>
+            <li class="breadcrumb__separator">&gt;</li>
+            <li class="breadcrumb__list-item">ブログ一覧</li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- breadcrumb -->
+
+    <div class="blog-body">
+      <div class="blog-body__inner inner">
+
+        <!-- メイン部分 -->
+        <div class="blog-article">
+          <ul class="blog-article__list">
+            <li class="blog-article__list-item">
+              <a href="./single.html" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog1.jpg" alt="ピンク珊瑚" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>ライセンス取得</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog2.jpg" alt="海ガメがのんびり泳ぐ様子" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>ウミガメと泳ぐ</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog3.jpg" alt="カクレクマノミがイソギンチャクの間から顔を出す様子" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>カクレクマノミ</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="./single.html" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog1.jpg" alt="ピンク珊瑚" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>ライセンス取得</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog2.jpg" alt="海ガメがのんびり泳ぐ様子" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>ウミガメと泳ぐ</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog4.jpg" alt="カクレクマノミがイソギンチャクの間から顔を出す様子" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>カクレクマノミ</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog5.jpg" alt="ピンク珊瑚" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>ライセンス取得</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog6.jpg" alt="海ガメがのんびり泳ぐ様子" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>ウミガメと泳ぐ</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog3.jpg" alt="カクレクマノミがイソギンチャクの間から顔を出す様子" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>カクレクマノミ</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="blog-article__list-item">
+              <a href="#" class="blog-card">
+                <figure class="blog-card__figure">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog4.jpg" alt="ピンク珊瑚" class="blog-card__image">
+                </figure>
+                <div class="blog-card__body">
+                  <div class="blog-card__date">
+                    <time datetime="2023-11-17">2023.11/17</time>
+                  </div>
+                  <div class="blog-card__title">
+                    <span>ライセンス取得</span>
+                  </div>
+                  <div class="blog-card__text">
+                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <!-- pagination -->
+          <nav class="blog-pagination">
+            <div class="blog-pagination__inner inner">
+              <div class="nav-pagination">
+                <ul class="nav-pagination__items">
+                  <li class="nav-pagination__item"><a class="nav-pagination__link nav-pagination__link--lt" href="#">
+                      <svg class="nav-pagination__lt-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#408F95" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M9 1L1 9L9 17" />
+                      </svg>
+                    </a></li>
+                  <li class="nav-pagination__item"><a class="nav-pagination__link nav-pagination__link--active"
+                      href="#">1</a></li>
+                  <li class="nav-pagination__item"><a class="nav-pagination__link" href="#">2</a></li>
+                  <li class="nav-pagination__item"><a class="nav-pagination__link" href="#">3</a></li>
+                  <li class="nav-pagination__item"><a class="nav-pagination__link" href="#">4</a></li>
+                  <li class="nav-pagination__item nav-pagination__item--md"><a class="nav-pagination__link"
+                      href="#">5</a>
+                  </li>
+                  <li class="nav-pagination__item nav-pagination__item--md"><a class="nav-pagination__link"
+                      href="#">6</a>
+                  </li>
+                  <li class="nav-pagination__item"><a class="nav-pagination__link nav-pagination__link--gt" href="#">
+                      <svg class="nav-pagination__gt-icon" width="10" height="18" viewBox="0 0 10 18"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#408F95" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none">
+                        <path d="M1 1L9 9L1 17" />
+                      </svg>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </nav><!-- pagination -->
+
+        </div>
+
+        <!-- サイドコンテンツ -->
+        <aside class="blog-aside aside">
+          <!-- 人気記事 -->
+          <section class="aside__section">
+            <div class="aside__section-header aside-title">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-title-icon01.svg" alt="人気記事" class="aside-title__icon">
+              <h2 class="aside-title__title">人気記事</h2>
+            </div>
+
+            <ul class="aside__article-list">
+              <li class="aside__article-item">
+                <a href="#" class="aside-article">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-article-01.jpg" alt="ライセンス取得" class="aside-article__image">
+                  <div class="aside-article__body">
+                    <time datetime="2023-11-17" class="aside-article__date">2023.11/17</time>
+                    <h3 class="aside-article__title">ライセンス取得</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="aside__article-item">
+                <a href="#" class="aside-article">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-article-02.jpg" alt="ウミガメ" class="aside-article__image">
+                  <div class="aside-article__body">
+                    <time datetime="2023-11-17" class="aside-article__date">2023.11/17</time>
+                    <h3 class="aside-article__title">ウミガメと泳ぐ</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="aside__article-item">
+                <a href="#" class="aside-article">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-article-03.jpg" alt="カクレクマノミ" class="aside-article__image">
+                  <div class="aside-article__body">
+                    <time datetime="2023-11-17" class="aside-article__date">2023.11/17</time>
+                    <h3 class="aside-article__title">カクレクマノミ</h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- 口コミ -->
+          <section class="aside__section">
+            <div class="aside__section-header aside-title">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-title-icon01.svg" alt="口コミ" class="aside-title__icon">
+              <h2 class="aside-title__title">口コミ</h2>
+            </div>
+
+            <div class="aside__voice">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-voice-img.jpg" alt="口コミを寄せてくれた男女のカップル" class="aside__voice-image">
+              <div class="aside__voice-body">
+                <div class="aside__voice-caption">30代(カップル)</div>
+                <div class="aside__voice-title">ここにタイトルが入ります。ここにタイトル</div>
+              </div>
+              <div class="aside__voice-button">
+                <a href="./voice.html" class="button button--aside-voice">
+                  <span class="button__front">View more</span>
+                  <span class="button__arrow">
+                    <svg viewBox="0 0 42 8" fill="none">
+                      <path d="M1 7H41L34 1" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- キャンペーン -->
+          <section class="aside__section">
+            <div class="aside__section-header aside-title">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-title-icon01.svg" alt="キャンペーン" class="aside-title__icon">
+              <h2 class="aside-title__title">キャンペーン</h2>
+            </div>
+
+            <ul class="aside__campaign-list">
+              <li class="aside__campaign-item">
+                <a href="./campaign.html" class="campaign-card campaign-card--aside">
+
+                  <figure class="campaign-card__figure campaign-card__figure--aside">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign1.jpg" alt="青い海のなかで様々な熱帯魚が泳ぐ様子">
+                  </figure>
+                  <div class="campaign-card__body campaign-card__body--aside">
+                    <div class="campaign-card__header">
+                      <div class="campaign-card__title campaign-card__title--aside">
+                        <span>ライセンス講習</span>
+                      </div>
+                    </div>
+                    <div class="campaign-card__price campaign-card__price--aside">
+                      <div class="campaign-card__price-description campaign-card__price-description--aside">
+                        全部コミコミ(お一人様)
+                      </div>
+                      <div class="campaign-card__prices">
+                        <div class="campaign-card__cancell-price campaign-card__cancell-price--aside">&yen;56,000
+                        </div>
+                        <div class="campaign-card__selling-price campaign-card__selling-price--aside">&yen;46,000
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="aside__campaign-item">
+                <a href="./campaign.html" class="campaign-card campaign-card--aside">
+
+                  <figure class="campaign-card__figure campaign-card__figure--aside">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign2.jpg" alt="プライベートビーチを彷彿とさせる白い砂浜とエメラルドグリーンの海に浮かぶダイビングボート">
+                  </figure>
+                  <div class="campaign-card__body campaign-card__body--aside">
+                    <div class="campaign-card__header">
+                      <div class="campaign-card__title campaign-card__title--aside">
+                        <span>貸切体験ダイビング</span>
+                      </div>
+                    </div>
+                    <div class="campaign-card__price campaign-card__price--aside">
+                      <div class="campaign-card__price-description campaign-card__price-description--aside">
+                        全部コミコミ(お一人様)
+                      </div>
+                      <div class="campaign-card__prices">
+                        <div class="campaign-card__cancell-price campaign-card__cancell-price--aside">&yen;24,000
+                        </div>
+                        <div class="campaign-card__selling-price campaign-card__selling-price--aside">&yen;18,000
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <div class="aside__campaign-button">
+              <a href="./campaign.html" class="button button--aside-campaign">
+                <span class="button__front">View more</span>
+                <span class="button__arrow">
+                  <svg viewBox="0 0 42 8" fill="none">
+                    <path d="M1 7H41L34 1" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </section>
+
+          <!-- アーカイブ -->
+          <section class="aside__section">
+            <div class="aside__section-header aside-title">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aside-title-icon01.svg" alt="アーカイブ" class="aside-title__icon">
+              <h2 class="aside-title__title">アーカイブ</h2>
+            </div>
+
+            <nav class="aside__archive article-archive">
+              <div class="article-archive__item">
+                <div class="article-archive__item-btn">
+                  <span class="article-archive__toggle-icon"></span>
+                  2023
+                </div>
+                <ul class="article-archive__list">
+                  <li class="article-archive__list-item"><a href="" class="article-archive__link">3月</a></li>
+                  <li class="article-archive__list-item"><a href="" class="article-archive__link">2月</a></li>
+                  <li class="article-archive__list-item"><a href="" class="article-archive__link">1月</a></li>
+                </ul>
+              </div>
+
+              <div class="article-archive__item">
+                <div class="article-archive__item-btn">
+                  <span class="article-archive__toggle-icon"></span>2022
+                </div>
+                <ul class="article-archive__list">
+                  <li class="article-archive__list-item"><a href="" class="article-archive__link">12月</a></li>
+                  <li class="article-archive__list-item"><a href="" class="article-archive__link">11月</a></li>
+                  <li class="article-archive__list-item"><a href="" class="article-archive__link">10月</a></li>
+                </ul>
+              </div>
+            </nav>
+          </section>
+
+        </aside>
+      </div>
+    </div>
+
+    <!-- Shop-information Section -->
+    <div class="shop-info">
+      <div class="shop-info__inner inner">
+        <div class="shop-info__container">
+          <div class="shop-info__body">
+            <div class="shop-info__header">
+              <img class="shop-info__logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-green.svg" alt="CodeUpsロゴ">
+            </div>
+            <div class="shop-info__address">
+              <div class="shop-info__text">
+                <span>沖縄県那覇市1-1</span>
+                <span>TEL:0120-000-0000</span>
+                <span>営業時間:8:30-19:00</span>
+                <span>定休日:毎週火曜日</span>
+              </div>
+              <div class="shop-info__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12963.312118305756!2d139.7671248!3d35.6812362!3m2!1i1024!2i768!4f5!3m3!1m2!1s0x0%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1673104195684!5m2!1sja!2sjp"
+                  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  class="shop-info__iframe"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="shop-info__contact">
+            <div class="contact-header">
+              <div class="contact-header__title">contact</div>
+              <h2 class="contact-header__subtitle text-shadow md-show">お問い合わせ</h2>
+              <h2 class="contact-header__subtitle text-shadow md-none">お問合せ</h2>
+            </div>
+            <div class="shop-info__contact-text">
+              <span>ご予約・お問い合わせはコチラ</span>
+            </div>
+            <div class="shop-info__button">
+              <a href="./contact.html" class=" button">
+                <span class="button__front">Contact us</span>
+                <span class="button__arrow">
+                  <svg viewBox="0 0 42 8" fill="none">
+                    <path d="M1 7H41L34 1" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Shop-information Section -->
+  </main>
+
+  <footer class="footer" id="footer">
+    <!-- Button Return to top -->
+    <a class="return-top js-top" href="#" id="page-top">
+      <svg class="return-top__image" width="8" height="42" viewBox="0 0 8 42" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 41L7 1L1 8" stroke="#408F95" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a><!-- Button Return to top -->
+
+    <div class="footer__inner inner">
+      <!-- ヘッダー部分 -->
+      <div class="footer__head">
+        <div class="footer__logo">
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps.svg" alt="CodeUpsのロゴ">
+        </div>
+        <div class="footer__sns sns">
+          <div class="sns__item">
+            <!-- Facebook icon -->
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/fb-icon.svg" alt="Facebookアイコン">
+          </div>
+          <div class="sns__item">
+            <!-- Instagram icon -->
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/instagram-icon.svg"" alt=" Instagramアイコン">
+          </div>
+        </div>
+      </div><!-- ヘッダー部分 -->
+
+      <!-- 共通ナビゲーション部分 -->
+      <nav class="footer__nav global-nav">
+        <div class="global-nav__content">
+          <div class="global-nav__grid">
+            <!-- カラム1 -->
+            <div class="global-nav__column global-nav__item1">
+              <!-- カラム1 1つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./campaign.html" class="global-nav__title">キャンペーン</a>
+                </div>
+                <ul class="global-nav__list">
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ライセンス取得</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">貸切体験ダイビング</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ナイトダイビング</a>
+                  </li>
+                </ul>
+              </div> <!-- カラム1 1つ目のブロック -->
+              <!-- カラム1 2つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./about.html" class="global-nav__title">私たちについて</a>
+                </div>
+              </div><!-- カラム１ 2つ目のブロック -->
+            </div><!-- カラム1 -->
+
+            <!-- カラム2 -->
+            <div class="global-nav__column global-nav__item2">
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./information.html" class="global-nav__title">ダイビング情報</a>
+                </div>
+                <ul class="global-nav__list">
+                  <li class="global-nav__list-item">
+                    <a href="./information.html?active-tab=tab-license" class="global-nav__link">ライセンス講習</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="./information.html?active-tab=tab-diving" class="global-nav__link">体験ダイビング</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="./information.html?active-tab=tab-fundiving" class="global-nav__link">ファンダイビング</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- カラム2 2つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./blog.html" class="global-nav__title">ブログ</a>
+                </div>
+              </div><!-- カラム2 2つ目のブロック -->
+            </div><!-- カラム2 -->
+
+            <!-- カラム3 -->
+            <div class="global-nav__column global-nav__item3">
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./voice.html" class="global-nav__title">お客様の声</a>
+                </div>
+              </div>
+
+              <!-- カラム3 2つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./price.html" class="global-nav__title">料金一覧</a>
+                </div>
+                <ul class="global-nav__list">
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ライセンス講習</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">体験ダイビング</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ファンダイビング</a>
+                  </li>
+                </ul>
+              </div><!-- カラム3 2つ目のブロック -->
+
+            </div><!-- カラム3 -->
+
+            <!-- カラム4 -->
+            <div class="global-nav__column global-nav__item4">
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./faq.html" class="global-nav__title">よくある質問</a>
+                </div>
+              </div>
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
+                </div>
+              </div>
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./terms.html" class="global-nav__title">利用規約</a>
+                </div>
+              </div>
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
+                </div>
+              </div>
+            </div><!-- カラム4 -->
+
+          </div>
+        </div>
+      </nav><!-- 共通ナビゲーション部分 -->
+
+      <small class="footer__copyright">
+        Copyright &copy; 2021 - 2023 <a href="https://codeups.jp/">CodeUps LLC.</a> All Rights Reserved.
+      </small>
+    </div>
+  </footer>
+</body>
+
+</html>

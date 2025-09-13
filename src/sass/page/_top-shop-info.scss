@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.shop-info {
+    width: 100%;
+    margin-top: rem(80);
+    // margin-bottom: rem(106);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+            margin-top: rem(145);
+    }    
+}
+
+.shop-info--subpage-about,
+.shop-info--subpage-information,
+.shop-info--terms {
+    margin-top: rem(100);
+}

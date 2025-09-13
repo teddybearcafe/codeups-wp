@@ -1,0 +1,139 @@
+@use "global" as *;
+
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(16) rem(32);
+  max-width: rem(200);
+  width: 100%;
+  background-color: $green;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid $green;
+}
+
+// contactページのconsentボタン
+.button--consent {
+  margin-top: rem(24);
+  pointer-events: none;
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+
+.button__front {
+  font-family: $english-font-family;
+  font-size: rem(14);
+  line-height: 1.57;
+  color: $white;
+  position: relative;
+  display: block;
+  height: inherit;
+  font-weight: $normal;
+}
+
+
+.button__arrow {
+  position: relative;
+  display: block;
+  transform: translateY(rem(-5));
+  margin-left: rem(8);
+}
+
+.button__arrow svg {
+  stroke: $white;
+  height: rem(8);
+  width: rem(40);
+}
+
+.button::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid $green;
+  transform: translate3d(0.25rem, 0.25rem, 0);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+@media (any-hover: hover) {
+  .button:hover .button__arrow svg path {
+    stroke: $green;
+  }
+
+  .button:hover .button__front {
+    color: $green;
+  }
+}
+
+.button::before {
+  background: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+@media (any-hover: hover) {
+  .button:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+
+/* button--white(404ページ)
+----------------------------------*/
+.button--white {
+  background-color: $white;
+}
+
+.button__front--white {
+  color: $green;
+}
+
+.button__arrow--white svg {
+  stroke: $green;
+}
+
+.button--white::after {
+  border: 1px solid $white;
+}
+
+.button__front--white {
+  color: $green;
+}
+
+@media (any-hover: hover) {
+  .button--white:hover .button__arrow svg path {
+    stroke: $white;
+  }
+
+  .button--white:hover .button__front--white {
+    color: $white;
+  }
+}
+
+.button--white::before {
+  background: $green;
+}
+
+@media (any-hover: hover) {
+  .button--white:hover::before {
+    transform: scale(1, 1);
+  }
+}

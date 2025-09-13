@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex,nofollow">
+
+  <!-- meta情報 -->
+  <title>CodeUps</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="CodeUps" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="CodeUps" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="summary" />
+  <!-- ファビコン -->
+  <link rel="icon" href="<?php echo get_theme_file_uri(); ?>/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri(); ?>/assets/images/apple-touch-icon.png" sizes="180x180" />
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="<?php echo get_theme_file_uri(); ?>/assets/css/style.css?ver=20250329.1900" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script defer src="<?php echo get_theme_file_uri(); ?>/assets/js/jquery.inview.min.js"></script>
+  <script defer src="<?php echo get_theme_file_uri(); ?>/assets/js/micromodal.js"></script>
+  <script defer src="<?php echo get_theme_file_uri(); ?>/assets/js/script.js"></script>
+</head>
+
+<body>
+  <header id="header" class="header js-header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="./index.html" class="header__logo-link">
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps.svg" alt="CodeUps｜沖縄県那覇市のダイビングショップ">
+          <span class="visually-hidden">CodeUps - 沖縄県那覇市のダイビングショップ</span>
+        </a>
+      </div>
+      <nav class="header__nav md-show">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="./campaign.html" class="header__link">
+              <span>Campaign</span>
+              <span>キャンペーン</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./about.html" class="header__link">
+              <span>About us</span>
+              <span>私たちについて</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./information.html" class="header__link">
+              <span>Information</span>
+              <span>ダイビング情報</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./blog.html" class="header__link">
+              <span>Blog</span>
+              <span>ブログ</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./voice.html" class="header__link">
+              <span>Voice</span>
+              <span>お客様の声</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./price.html" class="header__link">
+              <span>Price</span>
+              <span>料金一覧</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./faq.html" class="header__link">
+              <span>FAQ</span>
+              <span>よくある質問</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="./contact.html" class="header__link">
+              <span>Contact</span>
+              <span>お問合せ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger js-hamburger md-none">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ドロアーメニュー -->
+    <div class="drawer js-drawer">
+      <div class="drawer__inner inner">
+
+        <!-- 共通ナビゲーション部分 -->
+        <nav class="drawer__nav global-nav">
+          <div class="global-nav__content">
+            <div class="global-nav__grid">
+              <!-- カラム1 -->
+              <div class="global-nav__column global-nav__item1">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#campaign" class="global-nav__title">キャンペーン</a>
+                  </div>
+                  <ul class="global-nav__list">
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ライセンス取得</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">貸切体験ダイビング</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ナイトダイビング</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- カラム1 2つ目のブロック -->
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#about" class="global-nav__title">私たちについて</a>
+                  </div>
+                </div><!-- カラム１ 2つ目のブロック -->
+              </div><!-- カラム1 -->
+
+              <!-- カラム2 -->
+              <div class="global-nav__column global-nav__item2">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <span class="global-nav__title">ダイビング情報</span>
+                  </div>
+                  <ul class="global-nav__list">
+                    <li class="global-nav__list-item">
+                      <a href="./information.html?active-tab=tab-license" class="global-nav__link">ライセンス講習</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="./information.html?active-tab=tab-diving" class="global-nav__link">体験ダイビング</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="./information.html?active-tab=tab-fundiving" class="global-nav__link">ファンダイビング</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- カラム2 2つ目のブロック -->
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./blog.html" class="global-nav__title">ブログ</a>
+                  </div>
+                </div><!-- カラム2 2つ目のブロック -->
+              </div><!-- カラム2 -->
+
+              <!-- カラム3 -->
+              <div class="global-nav__column global-nav__item3">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#voice" class="global-nav__title">お客様の声</a>
+                  </div>
+                </div>
+
+                <!-- カラム3 2つ目のブロック -->
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="#price" class="global-nav__title">料金一覧</a>
+                  </div>
+                  <ul class="global-nav__list">
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ライセンス講習</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">体験ダイビング</a>
+                    </li>
+                    <li class="global-nav__list-item">
+                      <a href="#" class="global-nav__link">ファンダイビング</a>
+                    </li>
+                  </ul>
+                </div><!-- カラム3 2つ目のブロック -->
+
+              </div><!-- カラム3 -->
+
+              <!-- カラム4 -->
+              <div class="global-nav__column global-nav__item4">
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./faq.html" class="global-nav__title">よくある質問</a>
+                  </div>
+                </div>
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
+                  </div>
+                </div>
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./terms.html" class="global-nav__title">利用規約</a>
+                  </div>
+                </div>
+                <div class="global-nav__block">
+                  <div class="global-nav__heading">
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
+                  </div>
+                </div>
+              </div><!-- カラム4 -->
+            </div>
+          </div>
+        </nav><!-- 共通ナビゲーション部分 -->
+      </div>
+    </div><!-- ドロアーメニュー -->
+
+  </header>
+
+  <main>
+    <div class="mv-individual">
+      <picture class="mv-individual__img">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-mv.jpg" media="(min-width: 767px)">
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-mv-sp.jpg" alt="青い海のなか蝶々魚が泳ぐ様子">
+      </picture>
+      <div class="mv-individual__body">
+        <h1 class="mv-individual__title">about us</h1>
+      </div>
+    </div>
+
+    <!-- breadcrumb -->
+    <div class="about-breadcrumb">
+      <div class="about-breadcrumb__inner inner">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <ul class="breadcrumb__lists">
+            <li class="breadcrumb__list-item"><a href="index.html">TOP</a></li>
+            <li class="breadcrumb__separator">&gt;</li>
+            <li class="breadcrumb__list-item">私たちについて</li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- breadcrumb -->
+
+    <!-- About media Section -->
+    <section class="about-header">
+      <div class="about-header__inner inner">
+        <div class="about-header__contents">
+          <div class="about-header__images">
+            <div class="about-header__image-left">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/about-ocean1-pc.jpg" alt="沖縄の平家屋根に赤瓦とシーサー">
+            </div>
+            <div class="about-header__image-right">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/about-ocean2-pc.jpg" alt="浅瀬の海中を泳ぐクラカケチョウウオ">
+            </div>
+          </div>
+          <div class="about-header__body">
+            <div class="about-header__body-title"><span>d</span>ive into<br>the <span>o</span>cean</div>
+            <div class="about-header__body-contents">
+              <div class="about-header__body-text">
+                <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- About media Section -->
+
+
+    <section class="about-gallery">
+      <div class="about-gallery__inner inner">
+        <div class="about-gallery__section-header">
+          <div class="section-header">
+            <div class="section-header__title">gallery</div>
+            <h2 class="section-header__subtitle">フォト</h2>
+          </div>
+        </div>
+
+        <div class="about-gallery__body gallery">
+          <!-- モーダルは1つだけ用意 -->
+          <div class="gallery-modal micromodal-slide" id="modal-gallery" aria-hidden="true">
+            <div class="gallery-modal__overlay" tabindex="-1" data-micromodal-close>
+              <div class="gallery-modal__container" role="dialog" aria-modal="true"
+                aria-labelledby="gallery-modal-title" data-micromodal-close>
+                <header class="gallery-modal__header">
+                  <button class="gallery-modal__close" aria-label="閉じる" data-micromodal-close></button>
+                </header>
+                <div class="gallery-modal__content">
+                  <img class="gallery__image-lg" src="" alt="" id="modal-gallery-img" data-micromodal-close>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__items">
+            <div class="gallery__item">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/gallery1.jpg" alt="色とりどりのサンゴ礁に群れる無数の赤い熱帯魚" width="345" height="523"
+                loading="lazy" data-micromodal-trigger="modal-gallery" data-img="<?php echo get_theme_file_uri(); ?>/assets/images/gallery1.jpg"
+                data-alt="色とりどりのサンゴ礁に群れる無数の赤い熱帯魚">
+            </div>
+            <div class="gallery__item">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/gallery2.jpg" alt="透明度の高い海に浮かぶボートと緑豊かな島の風景（沖縄・川平湾を想起）" width="345" height="219"
+                loading="lazy" data-micromodal-trigger="modal-gallery" data-img="<?php echo get_theme_file_uri(); ?>/assets/images/gallery2.jpg"
+                data-alt="透明度の高い海に浮かぶボートと緑豊かな島の風景（沖縄・川平湾を想起）">
+            </div>
+            <div class="gallery__item">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/gallery3.jpg" alt="海中を優雅に泳ぐ2匹のクラカケチョウチョウウオ" width="345" height="219"
+                loading="lazy" data-micromodal-trigger="modal-gallery" data-img="<?php echo get_theme_file_uri(); ?>/assets/images/gallery3.jpg"
+                data-alt="海中を優雅に泳ぐ2匹のクラカケチョウチョウウオ">
+            </div>
+            <div class="gallery__item">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/gallery4.jpg" alt="鮮やかな黄色が特徴のイエローバンド・エンゼルフィッシュの横顔" width="345" height="219"
+                loading="lazy" data-micromodal-trigger="modal-gallery" data-img="<?php echo get_theme_file_uri(); ?>/assets/images/gallery4.jpg"
+                data-alt="鮮やかな黄色が特徴のイエローバンド・エンゼルフィッシュの横顔">
+            </div>
+            <div class="gallery__item">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/gallery5.jpg" alt="透き通った海を群れで泳ぐカラフルな小魚たち" width="345" height="219"
+                loading="lazy" data-micromodal-trigger="modal-gallery" data-img="<?php echo get_theme_file_uri(); ?>/assets/images/gallery5.jpg"
+                data-alt="透き通った海を群れで泳ぐカラフルな小魚たち">
+            </div>
+            <div class="gallery__item">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/gallery6.jpg" alt="立体的なサンゴの周りを泳ぐ黄色のチョウチョウウオたち" width="345" height="523"
+                loading="lazy" data-micromodal-trigger="modal-gallery" data-img="<?php echo get_theme_file_uri(); ?>/assets/images/gallery6.jpg"
+                data-alt="立体的なサンゴの周りを泳ぐ黄色のチョウチョウウオたち">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop-information Section -->
+    <div class="shop-info shop-info--subpage-about">
+      <div class="shop-info__inner inner">
+        <div class="shop-info__container">
+          <div class="shop-info__body">
+            <div class="shop-info__header">
+              <img class="shop-info__logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-green.svg" alt="CodeUpsロゴ">
+            </div>
+            <div class="shop-info__address">
+              <div class="shop-info__text">
+                <span>沖縄県那覇市1-1</span>
+                <span>TEL:0120-000-0000</span>
+                <span>営業時間:8:30-19:00</span>
+                <span>定休日:毎週火曜日</span>
+              </div>
+              <div class="shop-info__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12963.312118305756!2d139.7671248!3d35.6812362!3m2!1i1024!2i768!4f5!3m3!1m2!1s0x0%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1673104195684!5m2!1sja!2sjp"
+                  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  class="shop-info__iframe"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="shop-info__contact">
+            <div class="contact-header">
+              <div class="contact-header__title">contact</div>
+              <h2 class="contact-header__subtitle text-shadow md-show">お問い合わせ</h2>
+              <h2 class="contact-header__subtitle text-shadow md-none">お問合せ</h2>
+            </div>
+            <div class="shop-info__contact-text">
+              <span>ご予約・お問い合わせはコチラ</span>
+            </div>
+            <div class="shop-info__button">
+              <a href="./contact.html" class="button">
+                <span class="button__front">Contact us</span>
+                <span class="button__arrow">
+                  <svg viewBox="0 0 42 8" fill="none">
+                    <path d="M1 7H41L34 1" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Shop-information Section -->
+  </main>
+
+  <footer class="footer" id="footer">
+    <!-- Button Return to top -->
+    <a class="return-top js-top" href="#" id="page-top">
+      <svg class="return-top__image" width="8" height="42" viewBox="0 0 8 42" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 41L7 1L1 8" stroke="#408F95" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a><!-- Button Return to top -->
+
+    <div class="footer__inner inner">
+      <!-- ヘッダー部分 -->
+      <div class="footer__head">
+        <div class="footer__logo">
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps.svg" alt="CodeUpsのロゴ">
+        </div>
+        <div class="footer__sns sns">
+          <div class="sns__item">
+            <!-- Facebook icon -->
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/fb-icon.svg" alt="Facebookアイコン">
+          </div>
+          <div class="sns__item">
+            <!-- Instagram icon -->
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/instagram-icon.svg" alt=" Instagramアイコン">
+          </div>
+        </div>
+      </div><!-- ヘッダー部分 -->
+
+      <!-- 共通ナビゲーション部分 -->
+      <nav class="footer__nav global-nav">
+        <div class="global-nav__content">
+          <div class="global-nav__grid">
+            <!-- カラム1 -->
+            <div class="global-nav__column global-nav__item1">
+              <!-- カラム1 1つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./campaign.html" class="global-nav__title">キャンペーン</a>
+                </div>
+                <ul class="global-nav__list">
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ライセンス取得</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">貸切体験ダイビング</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ナイトダイビング</a>
+                  </li>
+                </ul>
+              </div> <!-- カラム1 1つ目のブロック -->
+              <!-- カラム1 2つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./about.html" class="global-nav__title">私たちについて</a>
+                </div>
+              </div><!-- カラム１ 2つ目のブロック -->
+            </div><!-- カラム1 -->
+
+            <!-- カラム2 -->
+            <div class="global-nav__column global-nav__item2">
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./information.html" class="global-nav__title">ダイビング情報</a>
+                </div>
+                <ul class="global-nav__list">
+                  <li class="global-nav__list-item">
+                    <a href="./information.html?active-tab=tab-license" class="global-nav__link">ライセンス講習</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="./information.html?active-tab=tab-diving" class="global-nav__link">体験ダイビング</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="./information.html?active-tab=tab-fundiving" class="global-nav__link">ファンダイビング</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- カラム2 2つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./blog.html" class="global-nav__title">ブログ</a>
+                </div>
+              </div><!-- カラム2 2つ目のブロック -->
+            </div><!-- カラム2 -->
+
+            <!-- カラム3 -->
+            <div class="global-nav__column global-nav__item3">
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./voice.html" class="global-nav__title">お客様の声</a>
+                </div>
+              </div>
+
+              <!-- カラム3 2つ目のブロック -->
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./price.html" class="global-nav__title">料金一覧</a>
+                </div>
+                <ul class="global-nav__list">
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ライセンス講習</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">体験ダイビング</a>
+                  </li>
+                  <li class="global-nav__list-item">
+                    <a href="#" class="global-nav__link">ファンダイビング</a>
+                  </li>
+                </ul>
+              </div><!-- カラム3 2つ目のブロック -->
+
+            </div><!-- カラム3 -->
+
+            <!-- カラム4 -->
+            <div class="global-nav__column global-nav__item4">
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./faq.html" class="global-nav__title">よくある質問</a>
+                </div>
+              </div>
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
+                </div>
+              </div>
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./terms.html" class="global-nav__title">利用規約</a>
+                </div>
+              </div>
+              <div class="global-nav__block">
+                <div class="global-nav__heading">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
+                </div>
+              </div>
+            </div><!-- カラム4 -->
+
+          </div>
+        </div>
+      </nav><!-- 共通ナビゲーション部分 -->
+
+      <small class="footer__copyright">
+        Copyright &copy; 2021 - 2023 <a href="https://codeups.jp/">CodeUps LLC.</a> All Rights Reserved.
+      </small>
+    </div>
+  </footer>
+</body>
+
+</html>

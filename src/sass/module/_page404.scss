@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.page404-body {
+    background-color: $green;
+}
+
+.page404-contents__image {
+    @include mq("md") {
+        max-width: rem(698);
+        max-height: rem(698);
+        aspect-ratio: 1 / 1;
+    }
+}
+
+.page404-contents__inner {
+    position: relative;
+}
+
+.page404-contents__wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.page404-contents__message {
+    font-size: rem(80);
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    color: $white;
+    // font-weight: $regular;
+    font-family: $numbers-font-family;
+    text-align: center;
+
+    @include mq("md") {
+        font-size: rem(160);
+        line-height: 1.2;
+    }
+}
+
+.page404-contents__sub-text {
+    font-family: $numbers-font-family;
+    color: $white;
+    text-align: center;
+    font-size: rem(16);
+    line-height: 1.5;
+
+    @include mq("md") {
+        margin-top: rem(24);
+    }
+}
+
+.page404-contents__button {
+    margin-top: rem(40);
+    display: flex;
+    justify-content: center;
+
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
+.page404-footer {
+    padding-top: 0;
+    margin-top: rem(32);
+
+    @include mq("md") {
+        margin-top: rem(48);
+        padding-top: 0;
+    }
+}

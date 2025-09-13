@@ -1,0 +1,84 @@
+@use "global" as *;
+
+
+/* 共通タイトル
+-------------------*/
+.aside__section:not(:first-child) {
+    margin-top: rem(80);
+}
+
+.aside__contents-title:not(:first-child) {
+    margin-top: rem(80);
+}
+
+/* 人気記事
+-------------------*/
+.aside__article-list {
+    margin-top: rem(24);
+}
+
+.aside__article-item:not(:first-child) {
+    margin-top: rem(24);
+}
+
+/* 口コミ
+-------------------*/
+.aside__voice {
+    margin-top: rem(24);
+}
+
+.aside__voice-body {
+    margin-top: rem(16);
+}
+
+.aside__voice-caption {
+    font-size: rem(12);
+    font-weight: $normal;
+}
+
+.aside__voice-title {
+    font-size: rem(24);
+    font-weight: $medium;
+    line-height: 1.21;
+    margin-top: rem(8);
+}
+
+.aside__voice-image {
+    @include mq("md") {
+        aspect-ratio: 294 / 218;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.aside__voice-button {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(56);
+}
+
+/* キャンペーン
+---------------------*/
+.aside__campaign-list {
+    margin-top: rem(24);
+}
+
+.aside__campaign-item:not(:first-child) {
+    margin-top: rem(40);
+}
+
+.aside__campaign-button {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(40);
+
+    @include mq("md") {
+        margin-top: rem(56);
+    }
+}
+
+/* アーカイブ
+---------------------*/
+.aside__archive {
+    margin-top: rem(24);
+}

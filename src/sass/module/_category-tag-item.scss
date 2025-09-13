@@ -1,0 +1,49 @@
+@use "global" as *;
+
+// .category-tag-item {
+//     font-size: rem(14);
+//     line-height: 1.57;
+//     color: $green;
+//     border: rem(1) solid $green;
+//     padding-top: rem(6);
+//     padding-bottom: rem(6);
+//     text-align: center;
+//     width: rem(162);
+//     height: rem(34);
+// }
+
+.category-tag-item--active {
+    background-color: $green;
+    color: $white;
+}
+
+.category-tag-item__link {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: rem(14);
+    line-height: 1.57;
+    color: $green;
+    border: rem(1) solid $green;
+    padding-top: rem(6);
+    padding-bottom: rem(6);
+    text-align: center;
+    width: rem(162);
+    height: rem(34);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (any-hover: hover){
+    .category-tag-item__link:not(.category-tag-item__link--active):hover {
+        background-color: $green;
+        color: $white;
+        transition: color,background-color 0.3s;
+    }
+}
+
+.category-tag-item__link--active {
+    background-color: $green;
+    color: $white;
+    cursor: default;
+}

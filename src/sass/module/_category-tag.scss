@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.category-tag__lists {
+    display: flex;
+    flex-wrap: wrap;
+    // display: grid;
+    column-gap: rem(20);
+    row-gap: rem(16);
+    // grid-template-columns: repeat(2, 1fr);
+
+    @include mq("md") {
+        column-gap: rem(32);
+    }
+}

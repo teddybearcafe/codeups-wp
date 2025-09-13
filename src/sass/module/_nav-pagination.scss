@@ -1,0 +1,275 @@
+@use "global" as *;
+
+
+/* ラッパー */
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    gap: rem(12);
+}
+
+.wp-pagenavi .current {
+    height: rem(38);
+    width: rem(38);
+    border: solid rem(1) $green;
+
+    font-family: $numbers-font-family;
+    font-weight: $bold;
+    line-height: 1.125;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(8) rem(12);
+
+    background-color: $green;
+    color: $white;
+}
+
+.wp-pagenavi .page {
+    height: rem(38);
+    width: rem(38);
+    border: solid rem(1) $green;
+
+    font-family: $numbers-font-family;
+    font-weight: $bold;
+    line-height: 1.125;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(8) rem(12);
+
+    color: $green;
+}
+
+@media (any-hover: hover) {
+    .wp-pagenavi .page:hover {
+        background-color: $green;
+        color: $white;
+        transition: color, background-color 0.3s;
+    }
+}
+
+/* 特定の数だけ表示する場合（例：3ページ） */
+// .wp-pagenavi .page {
+//     display: none;
+//     /* ページネーションをすべて隠す */
+// }
+
+.wp-pagenavi .current {
+    display: inline-block;
+    margin-left: rem(40);
+    /* 現在のページのみ表示 */
+}
+
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+    display: inline-block;
+    /* 前後へのリンクも表示 */
+}
+
+.wp-pagenavi .page:not(.current):nth-last-child(n+5) {
+    display: none;
+
+    /* 後ろから4番目以降のページは非表示 */
+    @include mq("md") {
+        display: block;
+    }
+}
+
+
+
+.wp-pagenavi .page:nth-child(2),
+.wp-pagenavi .page:last-child {
+    margin-left: rem(40);
+}
+
+/* 前・次ボタン */
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+    height: rem(38);
+    width: rem(38);
+    border: solid rem(1) $green;
+
+    font-family: $numbers-font-family;
+    font-weight: $bold;
+    line-height: 1.125;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(8) rem(12);
+
+    color: $green;
+}
+
+@media (any-hover: hover) {
+
+    .wp-pagenavi .previouspostslink:hover,
+    .wp-pagenavi .nextpostslink:hover {
+        @include mq("md") {
+            color: $white;
+            background-color: $green;
+            transition: color, background-color 0.3s;
+        }
+    }
+
+    .wp-pagenavi .previouspostslink:hover svg {
+        @include mq("md") {
+            stroke: $white;
+        }
+    }
+
+    .wp-pagenavi .nextpostslink:hover svg {
+        @include mq("md") {
+            stroke: $white;
+        }
+    }
+}
+
+/* 次ボタン */
+.wp-pagenavi .nextpostslink {
+    margin-left: rem(40);
+}
+
+// /* 各リンク共通 */
+// .nav-pagination__link {
+//     display: inline-block;
+//     padding: 8px 12px;
+//     border: 1px solid #ccc;
+//     color: #333;
+//     text-decoration: none;
+// }
+
+// /* 現在ページ（span） */
+// .nav-pagination__link--active {
+//     background-color: #408F95;
+//     color: #fff;
+//     font-weight: bold;
+//     pointer-events: none;
+// }
+
+// /* 前・次ボタン */
+// .nav-pagination__link--prev,
+// .nav-pagination__link--next {
+//     background-color: transparent;
+//     border: none;
+// }
+
+// /* 省略（…） */
+// .nav-pagination__link--ellipsis {
+//     color: #aaa;
+//     pointer-events: none;
+// }
+
+//--------------------------------
+
+
+.nav-pagination__items {
+    display: flex;
+
+    // justify-content: center;
+    @include mq("md") {
+        max-width: rem(444);
+    }
+}
+
+.nav-pagination__item {
+    height: rem(38);
+    width: rem(38);
+    border: solid rem(1) $green;
+}
+
+.nav-pagination__link {
+    font-family: $numbers-font-family;
+    font-weight: $bold;
+    line-height: 1.125;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $green;
+}
+
+.nav-pagination__link--gt img,
+.nav-pagination__link--lt img {
+    width: rem(8);
+    height: rem(16);
+}
+
+.nav-pagination__item+.nav-pagination__item {
+    margin-left: rem(12);
+}
+
+
+.nav-pagination__item:nth-child(2),
+.nav-pagination__item:last-child {
+    margin-left: rem(40);
+}
+
+
+// .nav-pagination__item--active {
+//     color: $white;
+//     background-color: $green;
+// }
+
+.nav-pagination__link--active {
+    cursor: default;
+    color: $white;
+    background-color: $green;
+}
+
+@media (any-hover: hover) {
+    .nav-pagination__link:not(.nav-pagination__link--active):hover {
+        // background-color: rgba(64, 143, 149, 0.3);
+        // color: rgba(153, 153, 153, 0.81);
+        background-color: $green;
+        color: $white;
+        transition: color, background-color 0.3s;
+    }
+}
+
+.nav-pagination__item--md {
+    display: none;
+
+    @include mq("md") {
+        display: flex;
+    }
+}
+
+.nav-pagination__item--gt:last-child {
+    margin-left: rem(80);
+}
+
+@media (any-hover: hover) {
+
+    .nav-pagination__link--gt:hover,
+    .nav-pagination__link--lt:hover {
+        @include mq("md") {
+            color: $white;
+            background-color: $green;
+            transition: color, background-color 0.3s;
+        }
+    }
+
+    .nav-pagination__link--gt:hover .nav-pagination__gt-icon {
+        @include mq("md") {
+            stroke: $white;
+        }
+    }
+
+    .nav-pagination__link--lt:hover .nav-pagination__lt-icon {
+        @include mq("md") {
+            stroke: $white;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+
+
+.terms-content {
+    line-height: 2.0;
+    font-weight: $normal;
+}
+
+.terms-content__header {
+    @include mq("md"){
+        font-size: rem(32);
+    }
+}
+
+.terms-content__list {
+    padding-left: rem(24);
+}
+
+.terms-content__list-item {
+    list-style-type: decimal;
+}
+

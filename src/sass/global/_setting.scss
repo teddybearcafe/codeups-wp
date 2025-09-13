@@ -1,0 +1,54 @@
+@use "sass:math";
+
+// インナー幅設定
+// コンテンツのインナー幅（最も共通の幅が多い部分）
+$inner: 1080px;
+// ※キュンパス幅ではなくインナーの幅を指す
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 15px;
+
+////////////////////
+// フォント設定
+////////////////////
+
+$base-font-family: "Noto Sans JP", sans-serif;
+$second-font-family: "Noto Serif JP", serif;
+$english-font-family: "Gotu", serif;
+$numbers-font-family: "Lato", serif;
+// ※検証ツールでしっかり反映されているか確認する
+
+body {
+  font-family: $base-font-family;
+}
+
+// フォントウェイト
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+// Figmaで設定できる7つの太さと、それに対応するタイポグラフィーの相関
+// 太さの名前   タイポグラフィーのCSS
+// Thin       font-weight: 250;
+// Light	    font-weight: 300;
+// DemiLight	font-weight: 350;
+// Regular    font-weight: 400;
+// Medium     font-weight: 500;
+// Bold       font-weight: 700;
+// Black      font-weight: 900;
+//
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black: #111;
+$white: #fff;
+$green: #408F95;
+$brown: #796A64;
+$font-color: #0D2936;
+$aqua: #DDF0F1;
+$warning: #C94800;

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+
+.privacy-content {
+    line-height: 2.0;
+    font-weight: $normal;
+}
+
+.privacy-content__header {
+    @include mq("md") {
+        font-size: rem(32);
+        // font-weight: $midum;
+    }
+}
+
+.privacy-content__list {
+    padding-left: rem(24);
+}
+
+.privacy-content__list-item {
+    list-style-type: decimal;
+    font-weight: $normal;
+}

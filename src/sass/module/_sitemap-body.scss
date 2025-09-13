@@ -1,0 +1,34 @@
+@use "global" as *;
+
+
+.sitemap-body {
+    margin-top: rem(52);
+
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.sitemap-body__inner {
+    position: relative;
+}
+
+.sitemap-body__inner::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: rem(-16);
+    left: calc(50% - min(45vw, rem(624)));
+    width: rem(120);
+    height: rem(55);
+    background-image: url("../images/fish-R.svg");
+    background-size: cover;
+
+    @include mq("md") {
+        display: none;
+        // top: rem(-58);
+        // left: calc( 50% - min( 48vw, rem(624)));
+        // width: rem(301);
+        // height: rem(138);   
+    }
+}
