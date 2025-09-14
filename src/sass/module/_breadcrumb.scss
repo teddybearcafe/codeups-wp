@@ -1,16 +1,22 @@
 @use "global" as *;
 
-.breadcrumb__lists {
-    display: flex;
+
+.breadcrumb {
     font-size: rem(14);
     font-weight: $regular;
+}
+
+.breadcrumb__lists {
+    display: flex;
+
 }
 
 .breadcrumb__list-item:not(:first-child) {
     margin-left: rem(8);
 }
 
-.breadcrumb__separator {
+.breadcrumb__separator,
+.breadcrumb .post {
     margin-left: rem(8);
 }
 
@@ -18,11 +24,13 @@
     color: $white;
 }
 
-.breadcrumb__list-item a{
+.breadcrumb__list-item a,
+.breadcrumb a {
     position: relative;
 }
 
-.breadcrumb__list-item a::before {
+.breadcrumb__list-item a::before,
+.breadcrumb a::before {
     position: absolute;
     left: 0;
     content: '';
@@ -38,8 +46,10 @@
     transition: transform 0.3s;
 }
 
-@media (any-hover: hover){
-.breadcrumb__list-item a:hover::before {
-    transform: scale(1, 1);
-}
+@media (any-hover: hover) {
+
+    .breadcrumb__list-item a:hover::before,
+    .breadcrumb a:hover::before {
+        transform: scale(1, 1);
+    }
 }

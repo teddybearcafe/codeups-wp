@@ -14,13 +14,7 @@
     <!-- breadcrumb -->
     <div class="blog-breadcrumb">
       <div class="blog-breadcrumb__inner inner">
-        <nav class="breadcrumb">
-          <ul class="breadcrumb__lists">
-            <li class="breadcrumb__list-item"><a href="index.html">TOP</a></li>
-            <li class="breadcrumb__separator">&gt;</li>
-            <li class="breadcrumb__list-item">ブログ一覧</li>
-          </ul>
-        </nav>
+      <?php get_template_part('parts/breadcrumb') ?>
       </div>
     </div><!-- breadcrumb -->
 
@@ -71,51 +65,10 @@
                 <?php endwhile; endif; ?>
           </ul>
 
-          <!-- pagination test -->
-          <nav class="blog-pagination">
-            <div class="blog-pagination__inner inner">
-
-              <?php wp_pagenavi(); ?>
-
-            </div>
-          </nav>
-
-
-
           <!-- pagination -->
           <nav class="blog-pagination">
             <div class="blog-pagination__inner inner">
-
-              <div class="nav-pagination">
-
-                <ul class="nav-pagination__items">
-                  <li class="nav-pagination__item"><a class="nav-pagination__link previouspostslink" href="#">
-                      <svg class="nav-pagination__lt-icon" width="10" height="18" viewBox="0 0 10 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" stroke="#408F95" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M9 1L1 9L9 17" />
-                      </svg>
-                    </a></li>
-                  <li class="nav-pagination__item"><a class="nav-pagination__link nav-pagination__link--active"
-                      href="#">1</a></li>
-                  <li class="nav-pagination__item"><a class="nav-pagination__link" href="#">2</a></li>
-                  <li class="nav-pagination__item"><a class="nav-pagination__link" href="#">3</a></li>
-                  <li class="nav-pagination__item"><a class="nav-pagination__link" href="#">4</a></li>
-                  <li class="nav-pagination__item nav-pagination__item--md"><a class="nav-pagination__link"
-                      href="#">5</a>
-                  </li>
-                  <li class="nav-pagination__item nav-pagination__item--md"><a class="nav-pagination__link"
-                      href="#">6</a>
-                  </li>
-                  <li class="nav-pagination__item"><a class="nav-pagination__link nav-pagination__link--gt" href="#">
-                      <svg class="nav-pagination__gt-icon" width="10" height="18" viewBox="0 0 10 18"
-                        xmlns="http://www.w3.org/2000/svg" stroke="#408F95" stroke-linecap="round"
-                        stroke-linejoin="round" fill="none">
-                        <path d="M1 1L9 9L1 17" />
-                      </svg>
-                    </a></li>
-                </ul>
-              </div>
+              <?php wp_pagenavi(); ?>
             </div>
           </nav><!-- pagination -->
 

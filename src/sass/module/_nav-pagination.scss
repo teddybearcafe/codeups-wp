@@ -64,7 +64,11 @@
 .wp-pagenavi .current {
     display: inline-block;
     margin-left: rem(40);
+
     /* 現在のページのみ表示 */
+    @include mq("md") {
+        margin-left: 0;
+    }
 }
 
 .wp-pagenavi .previouspostslink,

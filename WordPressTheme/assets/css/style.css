@@ -707,6 +707,7 @@ a {
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
+	word-break: break-all;
 }
 
 .blog-card__title::after {
@@ -761,17 +762,21 @@ body.is-drawer-active {
 	overflow: hidden;
 }
 
-.breadcrumb__lists {
-	display: flex;
+.breadcrumb {
 	font-size: 0.875rem;
 	font-weight: 300;
+}
+
+.breadcrumb__lists {
+	display: flex;
 }
 
 .breadcrumb__list-item:not(:first-child) {
 	margin-left: 0.5rem;
 }
 
-.breadcrumb__separator {
+.breadcrumb__separator,
+.breadcrumb .post {
 	margin-left: 0.5rem;
 }
 
@@ -779,11 +784,13 @@ body.is-drawer-active {
 	color: #fff;
 }
 
-.breadcrumb__list-item a {
+.breadcrumb__list-item a,
+.breadcrumb a {
 	position: relative;
 }
 
-.breadcrumb__list-item a::before {
+.breadcrumb__list-item a::before,
+.breadcrumb a::before {
 	background: #0D2936;
 	bottom: 0;
 	content: "";
@@ -3364,7 +3371,8 @@ body.is-modal-open {
 	transform: scale(1.1);
 }
 
-.breadcrumb__list-item a:hover::before {
+.breadcrumb__list-item a:hover::before,
+.breadcrumb a:hover::before {
 	transform: scale(1, 1);
 }
 
@@ -4348,6 +4356,10 @@ html {
 .mv__title {
 	font-size: 5rem;
 	line-height: 1.25;
+}
+
+.wp-pagenavi .current {
+	margin-left: 0;
 }
 
 .wp-pagenavi .page:not(.current):nth-last-child(n+5) {
