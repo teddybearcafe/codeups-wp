@@ -4,6 +4,12 @@
 
 /* 投稿記事タイトル部
 --------------------------*/
+.single-article{
+    @include mq('md'){
+    max-width: 65%;
+    }
+}
+
 .single-article__header {
     border-bottom: solid rem(1) $green;
     padding-bottom: rem(8);
@@ -89,4 +95,14 @@
 .single-article__pagination-inner {
     display: flex;
     justify-content: center;
+}
+
+.single-article__body figure{
+    max-width: 100%;
+    height: auto;
+}
+
+.single-article pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }

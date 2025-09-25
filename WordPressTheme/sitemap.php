@@ -20,8 +20,8 @@
   <meta property="og:description" content="" />
   <meta name="twitter:card" content="summary" />
   <!-- ファビコン -->
-  <link rel="icon" href="<?php echo get_theme_file_uri(); ?>/assets/images/favicon.ico" />
-  <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri(); ?>/assets/images/apple-touch-icon.png" sizes="180x180" />
+  <link rel="icon" href="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/apple-touch-icon.png" sizes="180x180" />
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,12 +30,12 @@
     rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" type="text/css" href="<?php echo get_theme_file_uri(); ?>/assets/css/style.css?ver=20250329.1900" />
+  <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/css/style.css?ver=20250329.1900" />
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script defer src="<?php echo get_theme_file_uri(); ?>/assets/js/jquery.inview.min.js"></script>
-  <script defer src="<?php echo get_theme_file_uri(); ?>/assets/js/script.js"></script>
+  <script defer src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/js/jquery.inview.min.js"></script>
+  <script defer src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/js/script.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
     <div class="header__inner">
       <div class="header__logo">
         <a href="./index.html" class="header__logo-link">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps.svg" alt="CodeUps｜沖縄県那覇市のダイビングショップ">
+          <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/CodeUps.svg" alt="CodeUps｜沖縄県那覇市のダイビングショップ">
           <span class="visually-hidden">CodeUps - 沖縄県那覇市のダイビングショップ</span>
         </a>
       </div>
@@ -118,7 +118,7 @@
               <div class="global-nav__column global-nav__item1">
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="#campaign" class="global-nav__title">キャンペーン</a>
                   </div>
                   <ul class="global-nav__list">
@@ -136,7 +136,7 @@
                 <!-- カラム1 2つ目のブロック -->
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="#about" class="global-nav__title">私たちについて</a>
                   </div>
                 </div><!-- カラム１ 2つ目のブロック -->
@@ -146,7 +146,7 @@
               <div class="global-nav__column global-nav__item2">
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <span class="global-nav__title">ダイビング情報</span>
                   </div>
                   <ul class="global-nav__list">
@@ -164,7 +164,7 @@
                 <!-- カラム2 2つ目のブロック -->
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="./blog.html" class="global-nav__title">ブログ</a>
                   </div>
                 </div><!-- カラム2 2つ目のブロック -->
@@ -174,7 +174,7 @@
               <div class="global-nav__column global-nav__item3">
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="#voice" class="global-nav__title">お客様の声</a>
                   </div>
                 </div>
@@ -182,7 +182,7 @@
                 <!-- カラム3 2つ目のブロック -->
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="#price" class="global-nav__title">料金一覧</a>
                   </div>
                   <ul class="global-nav__list">
@@ -204,25 +204,25 @@
               <div class="global-nav__column global-nav__item4">
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="./faq.html" class="global-nav__title">よくある質問</a>
                   </div>
                 </div>
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
                   </div>
                 </div>
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="./terms.html" class="global-nav__title">利用規約</a>
                   </div>
                 </div>
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                    <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                     <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
                   </div>
                 </div>
@@ -238,8 +238,8 @@
   <main>
     <div class="mv-individual">
       <picture class="mv-individual__img">
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/appendix-mv.jpg" media="(min-width: 767px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/appendix-mv-sp.jpg" alt="カラフルな熱帯魚たちがサンゴ礁のまわりを泳ぐ美しい海中の様子">
+        <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/appendix-mv.jpg" media="(min-width: 767px)">
+        <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/appendix-mv-sp.jpg" alt="カラフルな熱帯魚たちがサンゴ礁のまわりを泳ぐ美しい海中の様子">
       </picture>
       <div class="mv-individual__body">
         <h1 class="mv-individual__title">site Map</h1>
@@ -271,7 +271,7 @@
                   <!-- カラム1 1つ目のブロック -->
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./campaign.html" class="global-nav__title">キャンペーン</a>
                     </div>
                     <ul class="global-nav__list">
@@ -289,7 +289,7 @@
                   <!-- カラム1 2つ目のブロック -->
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./about.html" class="global-nav__title">私たちについて</a>
                     </div>
                   </div><!-- カラム１ 2つ目のブロック -->
@@ -299,7 +299,7 @@
                 <div class="global-nav__column global-nav__item2">
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./information.html" class="global-nav__title">ダイビング情報</a>
                     </div>
                     <ul class="global-nav__list">
@@ -317,7 +317,7 @@
                   <!-- カラム2 2つ目のブロック -->
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./blog.html" class="global-nav__title">ブログ</a>
                     </div>
                   </div><!-- カラム2 2つ目のブロック -->
@@ -327,7 +327,7 @@
                 <div class="global-nav__column global-nav__item3">
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./voice.html" class="global-nav__title">お客様の声</a>
                     </div>
                   </div>
@@ -335,7 +335,7 @@
                   <!-- カラム3 2つ目のブロック -->
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./price.html" class="global-nav__title">料金一覧</a>
                     </div>
                     <ul class="global-nav__list">
@@ -357,25 +357,25 @@
                 <div class="global-nav__column global-nav__item4">
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./faq.html" class="global-nav__title">よくある質問</a>
                     </div>
                   </div>
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
                     </div>
                   </div>
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./terms.html" class="global-nav__title">利用規約</a>
                     </div>
                   </div>
                   <div class="global-nav__block">
                     <div class="global-nav__heading">
-                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                      <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon-black.png" alt="ヒトデのアイコン" class="global-nav__icon">
                       <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
                     </div>
                   </div>
@@ -395,7 +395,7 @@
         <div class="shop-info__container">
           <div class="shop-info__body">
             <div class="shop-info__header">
-              <img class="shop-info__logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-green.svg" alt="CodeUpsロゴ">
+              <img class="shop-info__logo" src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/CodeUps-green.svg" alt="CodeUpsロゴ">
             </div>
             <div class="shop-info__address">
               <div class="shop-info__text">
@@ -451,16 +451,16 @@
       <!-- ヘッダー部分 -->
       <div class="footer__head">
         <div class="footer__logo">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps.svg" alt="CodeUpsのロゴ">
+          <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/CodeUps.svg" alt="CodeUpsのロゴ">
         </div>
         <div class="footer__sns sns">
           <div class="sns__item">
             <!-- Facebook icon -->
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/fb-icon.svg" alt="Facebookアイコン">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/fb-icon.svg" alt="Facebookアイコン">
           </div>
           <div class="sns__item">
             <!-- Instagram icon -->
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/instagram-icon.svg" alt=" Instagramアイコン">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/instagram-icon.svg" alt=" Instagramアイコン">
           </div>
         </div>
       </div><!-- ヘッダー部分 -->
@@ -474,7 +474,7 @@
               <!-- カラム1 1つ目のブロック -->
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./campaign.html" class="global-nav__title">キャンペーン</a>
                 </div>
                 <ul class="global-nav__list">
@@ -492,7 +492,7 @@
               <!-- カラム1 2つ目のブロック -->
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./about.html" class="global-nav__title">私たちについて</a>
                 </div>
               </div><!-- カラム１ 2つ目のブロック -->
@@ -502,7 +502,7 @@
             <div class="global-nav__column global-nav__item2">
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./information.html" class="global-nav__title">ダイビング情報</a>
                 </div>
                 <ul class="global-nav__list">
@@ -520,7 +520,7 @@
               <!-- カラム2 2つ目のブロック -->
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./blog.html" class="global-nav__title">ブログ</a>
                 </div>
               </div><!-- カラム2 2つ目のブロック -->
@@ -530,7 +530,7 @@
             <div class="global-nav__column global-nav__item3">
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./voice.html" class="global-nav__title">お客様の声</a>
                 </div>
               </div>
@@ -538,7 +538,7 @@
               <!-- カラム3 2つ目のブロック -->
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./price.html" class="global-nav__title">料金一覧</a>
                 </div>
                 <ul class="global-nav__list">
@@ -560,25 +560,25 @@
             <div class="global-nav__column global-nav__item4">
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./faq.html" class="global-nav__title">よくある質問</a>
                 </div>
               </div>
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
                 </div>
               </div>
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./terms.html" class="global-nav__title">利用規約</a>
                 </div>
               </div>
               <div class="global-nav__block">
                 <div class="global-nav__heading">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
                   <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
                 </div>
               </div>

@@ -4,6 +4,14 @@
     background-color: $green;
 }
 
+.page404-body .breadcrumb {
+    color: #fff;
+}
+
+.page404-body .breadcrumb a {
+    color: #fff;
+}
+
 .page404-contents__image {
     @include mq("md") {
         max-width: rem(698);

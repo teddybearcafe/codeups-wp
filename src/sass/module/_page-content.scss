@@ -1,0 +1,27 @@
+@use "global" as *;
+
+
+
+.page-content {
+    line-height: 2.0;
+    font-weight: $normal;
+}
+
+.page-content h2 {
+    @include mq("md") {
+        font-size: rem(32);
+    }
+}
+
+.page-content__list {
+    padding-left: rem(24);
+}
+
+.page-content__list-item {
+    list-style-type: decimal;
+}
+
+.page-content li {
+    margin-left: rem(24);
+    list-style-type: decimal;
+}

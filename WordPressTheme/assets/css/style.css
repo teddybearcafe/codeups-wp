@@ -389,6 +389,31 @@ a {
 	position: relative;
 }
 
+.archive-breadcrumb {
+	margin-top: 0.5rem;
+}
+
+.archive-category-tag {
+	margin-top: 3.25rem;
+}
+
+.archive-category-tag__inner {
+	position: relative;
+}
+
+.archive-category-tag__inner:before {
+	background-image: url("../images/fish-R.svg");
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 3.4375rem;
+	left: calc(50% - min(45vw, 39rem));
+	position: absolute;
+	top: -1.5rem;
+	width: 7.5rem;
+	z-index: -1;
+}
+
 /* アーカイブアイテム */
 
 .article-archive__item {
@@ -776,7 +801,8 @@ body.is-drawer-active {
 }
 
 .breadcrumb__separator,
-.breadcrumb .post {
+.breadcrumb .post,
+.breadcrumb .current-item {
 	margin-left: 0.5rem;
 }
 
@@ -2489,8 +2515,58 @@ body.is-modal-open {
 	margin-left: 5rem;
 }
 
+.page-body {
+	margin-top: 2.75rem;
+}
+
+.page-body__inner {
+	position: relative;
+}
+
+.page-body__inner::after {
+	background-image: url("../images/fish-R.svg");
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 3.4375rem;
+	left: calc(50% - min(45vw, 39rem));
+	position: absolute;
+	top: -1rem;
+	width: 7.5rem;
+}
+
+.page-breadcrumb {
+	margin-top: 0.5rem;
+}
+
+.page-content {
+	font-weight: 400;
+	line-height: 2;
+}
+
+.page-content__list {
+	padding-left: 1.5rem;
+}
+
+.page-content__list-item {
+	list-style-type: decimal;
+}
+
+.page-content li {
+	list-style-type: decimal;
+	margin-left: 1.5rem;
+}
+
 .page404-body {
 	background-color: #408F95;
+}
+
+.page404-body .breadcrumb {
+	color: #fff;
+}
+
+.page404-body .breadcrumb a {
+	color: #fff;
 }
 
 .page404-contents__inner {
@@ -2966,6 +3042,16 @@ body.is-modal-open {
 	justify-content: center;
 }
 
+.single-article__body figure {
+	height: auto;
+	max-width: 100%;
+}
+
+.single-article pre {
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
 .single-breadcrumb {
 	margin-top: 0.5rem;
 }
@@ -3105,15 +3191,15 @@ body.is-modal-open {
 	margin-top: 0.5rem;
 }
 
-.terms-body {
+.page-body {
 	margin-top: 2.75rem;
 }
 
-.terms-body__inner {
+.page-body__inner {
 	position: relative;
 }
 
-.terms-body__inner::after {
+.page-body__inner::after {
 	background-image: url("../images/fish-R.svg");
 	background-size: cover;
 	content: "";
@@ -3780,6 +3866,17 @@ html {
 	z-index: 500;
 }
 
+.archive-category-tag {
+	margin-top: 9.375rem;
+}
+
+.archive-category-tag__inner:before {
+	height: 8.625rem;
+	left: calc(50% - min(48vw, 39rem));
+	top: -4.5rem;
+	width: 18.8125rem;
+}
+
 .aside__voice-image {
 	aspect-ratio: 294/218;
 	height: auto;
@@ -3801,7 +3898,7 @@ html {
 
 .blog-aside {
 	margin: 0;
-	width: 18.375rem;
+	max-width: 30%;
 }
 
 .blog-body {
@@ -4374,6 +4471,25 @@ html {
 	display: flex;
 }
 
+.page-body {
+	margin-top: 8.5rem;
+}
+
+.page-body__inner {
+	max-width: 53.125rem;
+}
+
+.page-body__inner::after {
+	height: 8.625rem;
+	left: calc(50% - min(48vw, 39rem));
+	top: -3.625rem;
+	width: 18.8125rem;
+}
+
+.page-content h2 {
+	font-size: 2rem;
+}
+
 .page404-contents__image {
 	aspect-ratio: 1/1;
 	max-height: 43.625rem;
@@ -4609,6 +4725,10 @@ html {
 	margin-top: 1rem;
 }
 
+.single-article {
+	max-width: 65%;
+}
+
 .single-article__header-time {
 	font-family: "Gotu", serif;
 	font-size: 0.875rem;
@@ -4709,15 +4829,15 @@ html {
 	width: 50%;
 }
 
-.terms-body {
+.page-body {
 	margin-top: 8.5rem;
 }
 
-.terms-body__inner {
+.page-body__inner {
 	max-width: 53.125rem;
 }
 
-.terms-body__inner::after {
+.page-body__inner::after {
 	height: 8.625rem;
 	left: calc(50% - min(48vw, 39rem));
 	top: -3.625rem;

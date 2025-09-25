@@ -2,8 +2,8 @@
 <main>
     <div class="mv-individual">
       <picture class="mv-individual__img">
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/information-mv.jpg" media="(min-width: 767px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information-mv-sp.jpg" alt="青い海のなか蝶々魚が泳ぐ様子">
+        <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/information-mv.jpg" media="(min-width: 767px)">
+        <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/information-mv-sp.jpg" alt="青い海のなか蝶々魚が泳ぐ様子">
       </picture>
       <div class="mv-individual__body">
         <h1 class="mv-individual__title">information</h1>
@@ -25,18 +25,18 @@
             <li class="tab-area__item tab-button tab-button--active" data-tab="tab-license">
               <div class="tab-button__link">
                 <img class="tab-button__link-icon tab-button__link-icon--active"
-                  src="<?php echo get_theme_file_uri(); ?>/assets/images/tab-button-icon-license.svg" alt="">ライセンス<br class="md-none">講習
+                  src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/tab-button-icon-license.svg" alt="">ライセンス<br class="md-none">講習
               </div>
             </li>
             <li class="tab-area__item tab-button" data-tab="tab-fundiving">
               <div class="tab-button__link">
-                <img class="tab-button__link-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/tab-button-icon-fundiving.svg" alt="">ファン<br
+                <img class="tab-button__link-icon" src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/tab-button-icon-fundiving.svg" alt="">ファン<br
                   class="md-none">ダイビング
               </div>
             </li>
             <li class="tab-area__item tab-button" data-tab="tab-diving">
               <div class="tab-button__link">
-                <img class="tab-button__link-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/tab-button-icon-diving.svg" alt="">体験<br
+                <img class="tab-button__link-icon" src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/tab-button-icon-diving.svg" alt="">体験<br
                   class="md-none">ダイビング
               </div>
             </li>
@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div class="tab-panel__image">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-license.jpg" alt="ダイビングライセンス講習の様子">
+                <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/info-license.jpg" alt="ダイビングライセンス講習の様子">
               </div>
             </div>
             <div data-tab="tab-fundiving" class="panel-area__item tab-panel">
@@ -61,7 +61,7 @@
                 </div>
               </div>
               <div class="tab-panel__image">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-fundiving.jpg" alt="海の中をたくさんの魚が泳ぐ様子">
+                <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/info-fundiving.jpg" alt="海の中をたくさんの魚が泳ぐ様子">
               </div>
             </div>
             <div data-tab="tab-diving" class="panel-area__item tab-panel">
@@ -72,7 +72,7 @@
                 </div>
               </div>
               <div class="tab-panel__image">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-diving.jpg" alt="海の中を蝶々ウオが泳ぐ様子">
+                <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/info-diving.jpg" alt="海の中を蝶々ウオが泳ぐ様子">
               </div>
             </div>
           </div>

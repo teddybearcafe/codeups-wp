@@ -11,11 +11,11 @@
 
       <div class="loader__images">
         <!-- SP用 -->
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv01-sp.jpg" alt="ウミガメが泳ぐ様子" class="loader__image">
+        <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv01-sp.jpg" alt="ウミガメが泳ぐ様子" class="loader__image">
 
         <!-- PC用：左右2枚（CSSで表示を制御） -->
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/image-left.jpg" alt="ウミガメが泳ぐ様子" class="loader__image loader__image--left">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/image-right.jpg" alt="ウミガメが泳ぐ様子" class="loader__image loader__image--right">
+        <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/image-left.jpg" alt="ウミガメが泳ぐ様子" class="loader__image loader__image--left">
+        <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/image-right.jpg" alt="ウミガメが泳ぐ様子" class="loader__image loader__image--right">
       </div>
 
       <!-- 再表示キャッチコピー -->
@@ -33,36 +33,36 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv01-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv01-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv01-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv01-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv02-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv02-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv02-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv02-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv03-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv03-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv03-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv03-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv04-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv04-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv04-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv04-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv01-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv01-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv01-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv01-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv02-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv02-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv02-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv02-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv03-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv03-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv03-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv03-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv04-pc.jpg" media="(min-width: 767px)">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv04-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
+            <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv04-pc.jpg" media="(min-width: 767px)">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/mv04-sp.jpg" alt="海中から水面を仰ぐとキラキラした海面のもと海ガメが泳ぐ姿">
           </picture>
         </div>
       </div>
@@ -88,11 +88,11 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img class="campaign-card__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign1.jpg" alt="青い海のなかで様々な熱帯魚が泳ぐ様子" width="280" height="188">
+                  <img class="campaign-card__image" src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign1.jpg" alt="青い海のなかで様々な熱帯魚が泳ぐ様子" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
-                    <div class="campaign-card__category">
+                    <div class="campaign-card__category">                      
                       <span>ライセンス講習</span>
                     </div>
                     <div class="campaign-card__title">
@@ -113,7 +113,7 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign2.jpg" alt="プライベートビーチを彷彿とさせる白い砂浜とエメラルドグリーンの海に浮かぶダイビングボート" width="280" height="188">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign2.jpg" alt="プライベートビーチを彷彿とさせる白い砂浜とエメラルドグリーンの海に浮かぶダイビングボート" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
@@ -138,7 +138,7 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign3.jpg" alt="夜の海を泳ぐクラゲの様子" width="280" height="188">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign3.jpg" alt="夜の海を泳ぐクラゲの様子" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
@@ -163,7 +163,7 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign4.jpg" alt="複数のダイバーが水面に顔を出して浮かぶ様子" width="280" height="188">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign4.jpg" alt="複数のダイバーが水面に顔を出して浮かぶ様子" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
@@ -188,7 +188,7 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign1.jpg" alt="青い海のなかで様々な熱帯魚が泳ぐ様子" width="280" height="188">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign1.jpg" alt="青い海のなかで様々な熱帯魚が泳ぐ様子" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
@@ -213,7 +213,7 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign2.jpg" alt="プライベートビーチを彷彿とさせる白い砂浜とエメラルドグリーンの海に浮かぶダイビングボート" width="280" height="188">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign2.jpg" alt="プライベートビーチを彷彿とさせる白い砂浜とエメラルドグリーンの海に浮かぶダイビングボート" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
@@ -238,7 +238,7 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign3.jpg" alt="夜の海を泳ぐクラゲの様子" width="280" height="188">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign3.jpg" alt="夜の海を泳ぐクラゲの様子" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
@@ -263,7 +263,7 @@
             <div class="swiper-slide campaign__slide">
               <div class="campaign-card">
                 <figure class="campaign-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign4.jpg" alt="複数のダイバーが水面に顔を出して浮かぶ様子" width="280" height="188">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/campaign4.jpg" alt="複数のダイバーが水面に顔を出して浮かぶ様子" width="280" height="188">
                 </figure>
                 <div class="campaign-card__body">
                   <div class="campaign-card__header">
@@ -322,10 +322,10 @@
         <div class="about__contents-wrapper">
           <div class="about__images">
             <div class="about__image-left">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/about-ocean1-pc.jpg" alt="沖縄の平家屋根に赤瓦とシーサー">
+              <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/about-ocean1-pc.jpg" alt="沖縄の平家屋根に赤瓦とシーサー">
             </div>
             <div class="about__image-right">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/about-ocean2-pc.jpg" alt="浅瀬の海中を泳ぐクラカケチョウウオ">
+              <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/about-ocean2-pc.jpg" alt="浅瀬の海中を泳ぐクラカケチョウウオ">
             </div>
           </div>
           <div class="about__body">
@@ -363,7 +363,7 @@
         </div>
         <div class="information__wrapper">
           <div class="information__image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/info-img.jpg" alt="珊瑚礁の棚の周りを泳ぐチョウチョウウオ">
+            <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/info-img.jpg" alt="珊瑚礁の棚の周りを泳ぐチョウチョウウオ">
           </div>
           <div class="information__body">
             <div class="information__content-title">ライセンス講習</div>
@@ -399,7 +399,7 @@
           <li class="blog-cards__item">
             <a href="./single.html" class="blog-card">
               <figure class="blog-card__figure">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog1.jpg" alt="ピンク珊瑚" class="blog-card__image">
+                <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/blog1.jpg" alt="ピンク珊瑚" class="blog-card__image">
               </figure>
               <div class="blog-card__body">
                 <div class="blog-card__date">
@@ -418,7 +418,7 @@
           <li class="blog-cards__item">
             <a href="./single.html" class="blog-card">
               <figure class="blog-card__figure">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog2.jpg" alt="海ガメがのんびり泳ぐ様子" class="blog-card__image">
+                <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/blog2.jpg" alt="海ガメがのんびり泳ぐ様子" class="blog-card__image">
               </figure>
               <div class="blog-card__body">
                 <div class="blog-card__date">
@@ -437,7 +437,7 @@
           <li class="blog-cards__item">
             <a href="./single.html" class="blog-card">
               <figure class="blog-card__figure">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog3.jpg" alt="カクレクマノミがイソギンチャクの間から顔を出す様子" class="blog-card__image">
+                <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/blog3.jpg" alt="カクレクマノミがイソギンチャクの間から顔を出す様子" class="blog-card__image">
               </figure>
               <div class="blog-card__body">
                 <div class="blog-card__date">
@@ -491,7 +491,7 @@
                 </div>
 
                 <div class="voice-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/voice1.jpg" alt="麦わら帽子を被ったTシャツ姿の20代の女性">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/voice1.jpg" alt="麦わら帽子を被ったTシャツ姿の20代の女性">
                 </div>
               </div>
               <div class="voice-card__text">
@@ -515,7 +515,7 @@
                 </div>
 
                 <div class="voice-card__figure">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/voice2.jpg" alt="ファンダイビングを体験した20代の男性">
+                  <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/voice2.jpg" alt="ファンダイビングを体験した20代の男性">
                 </div>
               </div>
               <div class="voice-card__text">
@@ -552,8 +552,8 @@
         <div class="price__body">
           <div class="price__header-image">
             <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/price-pc.jpg" media="(min-width: 768px)">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-sp.jpg" alt="珊瑚礁周辺を群をなして泳ぐ赤い熱帯魚">
+              <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/price-pc.jpg" media="(min-width: 768px)">
+              <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/price-sp.jpg" alt="珊瑚礁周辺を群をなして泳ぐ赤い熱帯魚">
             </picture>
           </div>
 
@@ -656,52 +656,4 @@
       </div>
     </section><!-- Price Section -->
 
-    <!-- Shop-information Section -->
-    <div class="shop-info">
-      <div class="shop-info__inner inner">
-        <div class="shop-info__container">
-          <div class="shop-info__body">
-            <div class="shop-info__header">
-              <img class="shop-info__logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/CodeUps-green.svg" alt="CodeUpsロゴ">
-            </div>
-            <div class="shop-info__address">
-              <div class="shop-info__text">
-                <span>沖縄県那覇市1-1</span>
-                <span>TEL:0120-000-0000</span>
-                <span>営業時間:8:30-19:00</span>
-                <span>定休日:毎週火曜日</span>
-              </div>
-              <div class="shop-info__map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12963.312118305756!2d139.7671248!3d35.6812362!3m2!1i1024!2i768!4f5!3m3!1m2!1s0x0%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1673104195684!5m2!1sja!2sjp"
-                  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                  class="shop-info__iframe"></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="shop-info__contact">
-            <div class="contact-header">
-              <div class="contact-header__title">contact</div>
-              <h2 class="contact-header__subtitle text-shadow md-show">お問い合わせ</h2>
-              <h2 class="contact-header__subtitle text-shadow md-none">お問合せ</h2>
-            </div>
-            <div class="shop-info__contact-text">
-              <span>ご予約・お問い合わせはコチラ</span>
-            </div>
-            <div class="shop-info__button">
-              <a href=" ./contact.html" class=" button">
-                <span class="button__front">Contact us</span>
-                <span class="button__arrow">
-                  <svg viewBox="0 0 42 8" fill="none">
-                    <path d="M1 7H41L34 1" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- Shop-information Section -->
-
-  </main>
   <?php get_footer(); ?>

@@ -2,8 +2,8 @@
 <main>
     <div class="mv-individual">
       <picture class="mv-individual__img">
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/appendix-mv.jpg" media="(min-width: 767px)">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/appendix-mv-sp.jpg" alt="カラフルな熱帯魚たちがサンゴ礁のまわりを泳ぐ美しい海中の様子">
+        <source srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/appendix-mv.jpg" media="(min-width: 767px)">
+        <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/appendix-mv-sp.jpg" alt="カラフルな熱帯魚たちがサンゴ礁のまわりを泳ぐ美しい海中の様子">
       </picture>
       <div class="mv-individual__body">
         <h1 class="mv-individual__title">contact</h1>
