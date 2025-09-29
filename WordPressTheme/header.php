@@ -35,7 +35,7 @@
   <header id="header" class="header js-header">
     <div class="header__inner">
       <h1 class="header__logo">
-        <a href="/index.html" class="header__logo-link">
+        <a href="<?php echo esc_url( home_url()); ?>" class="header__logo-link">
           <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/CodeUps.svg" alt="CodeUps｜沖縄県那覇市のダイビングショップ">
           <span class="visually-hidden">CodeUps - 沖縄県那覇市のダイビングショップ</span>
         </a>
@@ -144,13 +144,13 @@
                   </div>
                   <ul class="global-nav__list">
                     <li class="global-nav__list-item">
-                      <a href="./information.html?active-tab=tab-license" class="global-nav__link">ライセンス講習</a>
+                      <a href="/information?active-tab=tab-license" class="global-nav__link">ライセンス講習</a>
                     </li>
                     <li class="global-nav__list-item">
-                      <a href="./information.html?active-tab=tab-diving" class="global-nav__link">体験ダイビング</a>
+                      <a href="/information?active-tab=tab-diving" class="global-nav__link">体験ダイビング</a>
                     </li>
                     <li class="global-nav__list-item">
-                      <a href="./information.html?active-tab=tab-fundiving" class="global-nav__link">ファンダイビング</a>
+                      <a href="/information?active-tab=tab-fundiving" class="global-nav__link">ファンダイビング</a>
                     </li>
                   </ul>
                 </div>
@@ -198,25 +198,25 @@
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
                     <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
-                    <a href="./faq.html" class="global-nav__title">よくある質問</a>
+                    <a href="/faq" class="global-nav__title">よくある質問</a>
                   </div>
                 </div>
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
                     <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
-                    <a href="./privacy.html" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
+                    <a href="/privacy" class="global-nav__title">プライバシー<br class="md-none">ポリシー</a>
                   </div>
                 </div>
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
                     <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
-                    <a href="./terms.html" class="global-nav__title">利用規約</a>
+                    <a href="/terms" class="global-nav__title">利用規約</a>
                   </div>
                 </div>
                 <div class="global-nav__block">
                   <div class="global-nav__heading">
                     <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/hitode-icon.png" alt="ヒトデのアイコン" class="global-nav__icon">
-                    <a href="./contact.html" class="global-nav__title">お問い合わせ</a>
+                    <a href="/contact" class="global-nav__title">お問い合わせ</a>
                   </div>
                 </div>
               </div><!-- カラム4 -->

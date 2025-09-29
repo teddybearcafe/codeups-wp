@@ -297,7 +297,7 @@
         </div> -->
 
         <div class="campaign__button">
-          <a href="./campaign.html" class="button">
+          <a href="/campaign" class="button">
             <span class="button__front">View more</span>
             <span class="button__arrow">
               <svg viewBox="0 0 42 8" fill="none">
@@ -336,7 +336,7 @@
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
               </div>
               <div class="about__button">
-                <a href="./about.html" class="button">
+                <a href="/about-us" class="button">
                   <span class="button__front">View more</span>
                   <span class="button__arrow">
                     <svg viewBox="0 0 42 8" fill="none">
@@ -372,7 +372,7 @@
                 正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
             </div>
             <div class="information__button">
-              <a href="./information.html" class="button">
+              <a href="/information" class="button">
                 <span class="button__front">View more</span>
                 <span class="button__arrow">
                   <svg viewBox="0 0 42 8" fill="none">
@@ -397,7 +397,7 @@
 
         <ul class="blog__body blog-cards">
           <li class="blog-cards__item">
-            <a href="./single.html" class="blog-card">
+            <a href="/single" class="blog-card">
               <figure class="blog-card__figure">
                 <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/blog1.jpg" alt="ピンク珊瑚" class="blog-card__image">
               </figure>
@@ -416,7 +416,7 @@
           </li>
 
           <li class="blog-cards__item">
-            <a href="./single.html" class="blog-card">
+            <a href="/single" class="blog-card">
               <figure class="blog-card__figure">
                 <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/blog2.jpg" alt="海ガメがのんびり泳ぐ様子" class="blog-card__image">
               </figure>
@@ -435,7 +435,7 @@
           </li>
 
           <li class="blog-cards__item">
-            <a href="./single.html" class="blog-card">
+            <a href="/single" class="blog-card">
               <figure class="blog-card__figure">
                 <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/assets/images/blog3.jpg" alt="カクレクマノミがイソギンチャクの間から顔を出す様子" class="blog-card__image">
               </figure>
@@ -455,7 +455,7 @@
         </ul>
 
         <div class="blog__button">
-          <a href="./blog.html" class="button">
+          <a href="/blog" class="button">
             <span class="button__front">View more</span>
             <span class="button__arrow">
               <svg viewBox="0 0 42 8" fill="none">
@@ -529,7 +529,7 @@
         </ul>
 
         <div class="voice__button">
-          <a href="./voice.html" class="button">
+          <a href="/voice" class="button">
             <span class="button__front">View more</span>
             <span class="button__arrow">
               <svg viewBox="0 0 42 8" fill="none">
@@ -644,7 +644,7 @@
         </div>
 
         <div class="price__button">
-          <a href="./price.html" class="button">
+          <a href="/price" class="button">
             <span class="button__front">View more</span>
             <span class="button__arrow">
               <svg viewBox="0 0 42 8" fill="none">

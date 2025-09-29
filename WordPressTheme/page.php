@@ -18,6 +18,8 @@
         $heading = 'Privacy Policy';
       } elseif ( $slug === 'terms-of-service' ) {
         $heading = 'Terms of Service';
+      } elseif ( $slug === 'sitemap' ) {
+        $heading = 'SiteMap';
       }
       ?>
       <div class="mv-individual__body">

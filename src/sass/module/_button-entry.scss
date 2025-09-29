@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.button-entry__front-layer {
+    // display: flex;
+    width: 100%;
+}
+
+.button-entry__front-layer p {
+    display: flex;
+}
+
+//* Contact Form7がデフォルトで出力する｢spinner｣も、カスタマイズの足枷になるため非表示
+.button-entry .wpcf7-spinner {
+    display: none;
+}

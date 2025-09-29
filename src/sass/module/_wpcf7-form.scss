@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.wpcf7-form-control {
+    width: 100%;
+    // width: 100% !important; // 強制的に横幅いっぱい
+    box-sizing: border-box;
+}
+
+/* CF7 チェックボックス縦並び */
+.wpcf7-list-item {
+    display: block;
+    /* 横並びではなく縦並び */
+    // margin-bottom: 0.6em;
+    /* 項目ごとの余白 */
+}
+
+/* 既存のチェックボックスデザインを適用 */
+.wpcf7-list-item label {
+    position: relative;
+    padding-left: 1.5em;
+    /* ボックス分の余白 */
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.wpcf7-list-item input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.wpcf7-list-item label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #06b6d4;
+    /* 緑枠 */
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.wpcf7-list-item input[type="checkbox"]:checked+.wpcf7-list-item-label::after {
+    content: "";
+    position: absolute;
+    left: 0.25em;
+    top: 0.1em;
+    width: 0.5em;
+    height: 1em;
+    border-right: 2px solid #F45F5F;
+    /* チェック色 */
+    border-bottom: 2px solid #F45F5F;
+    transform: rotate(40deg);
+}
+
+//* sendボタンのカスタマイズ
+/*デフォルトのスタイルを無効化する*/
+input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+
+

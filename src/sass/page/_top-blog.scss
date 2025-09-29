@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.blog {
+.top-blog {
     margin-top: rem(80);
     // padding-top: rem(80);
 
@@ -11,7 +11,7 @@
     }
 }
 
-.blog::after {
+.top-blog::after {
     @include mq("md") {
         display: block;
         content: "";
@@ -28,7 +28,7 @@
         max-height: rem(500);
     }
 }
-.blog::before {
+.top-blog::before {
     @include mq("md") {
         display: block;
         content: "";

@@ -65,11 +65,15 @@
 
     @include mq("md") {
         width: 70%;
-        padding-top: rem(16);
+        padding-top: rem(12);
         padding-bottom: rem(40);
         padding-left: rem(12);
         margin: 0 auto;
     }
+}
+
+.contact-form__unit-contents p {
+    width: 100%;
 }
 
 .contact-form__unit-contents--checkbox {
@@ -256,11 +260,14 @@
     /*矢印の色*/
     pointer-events: none;
     /*矢印部分をクリックできるようにする*/
+    z-index: 10;
 
     @include mq("md") {
         top: rem(20);
     }
 }
+
+
 
 /* Style for the text area
 ---------------------------------------------*/
@@ -406,4 +413,11 @@
     @include mq("md") {
         display: none;
     }
+}
+
+.contact-form__send-button {
+    margin-top: rem(16);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

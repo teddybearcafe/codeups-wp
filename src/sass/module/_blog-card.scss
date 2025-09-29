@@ -9,11 +9,27 @@
     background: $white;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+
+.blog-card a {
+    width: 100%;
 }
 
 .blog-card__figure {
     aspect-ratio: 300 / 200;
     overflow: hidden;
+    // max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.blog-card__figure img {
+    width: 100%;
+    // max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .blog-card__body {
@@ -76,4 +92,12 @@
     // -webkit-box-orient: vertical;
     // -webkit-line-clamp: 5; /* 制限したい行数が3の場合 */
     // overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.blog-card__text pre,
+.blog-card__text p {
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
